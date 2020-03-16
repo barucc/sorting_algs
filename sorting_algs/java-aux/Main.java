@@ -7,10 +7,10 @@ public class Main{
 	
 	public static int[] randArray(int n) {
 		int arr2[] = new int[n];
-    Random r = new Random();
+    	Random r = new Random();
 		for(int i=0; i<n; i++)
 			arr2[i] = r.nextInt()%50;//Random();
-    return arr2;
+    	return arr2;
 	}
 
 
