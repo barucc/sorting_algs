@@ -25,8 +25,6 @@ public class InsertionSort{
 			i++;
 		}
 		
-		
-		System.out.println("Current Time Insertion Sort = "+System.currentTimeMillis()+" msec");
 	}
 	
 	

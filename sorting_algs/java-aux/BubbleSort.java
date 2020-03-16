@@ -17,7 +17,6 @@ class BubbleSort {
                     a[j] = a[j+1]; 
                     a[j+1] = temp; 
                 } 
-        System.out.println("Current Time Bubble Sort = "+System.currentTimeMillis()+" msec");
     } 
   
         

@@ -31,9 +31,7 @@ public class SelectionSort{
 			swap(S, i, i1);
 			i++;
 		}
-				
-		System.out.println("Current Time Selection Sort = "+System.currentTimeMillis()+" msec");
-	
+					
 	}
 	
 }
