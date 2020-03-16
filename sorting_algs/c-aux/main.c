@@ -23,7 +23,7 @@ int* copy_array(int* S, int n){
 int main(){
 	
 	srand(time(NULL));
-	int n = 50000;//rand()%100000;
+	int n = 100000;//rand()%100000;
 	int* S = randArray(n);
 	int* a = copy_array(S, n);
 	int* v = copy_array(S, n);
@@ -42,7 +42,7 @@ int main(){
 	cpu_time_used = ((double) (end - start)) / CLOCKS_PER_SEC;
   
   double t = cpu_time_used;
-  printf("bubbleSort fatto. Tempo: %lf msec.\n", t);
+  printf("bubbleSort fatto. Tempo: %lf sec.\n", t);
     
 	start = clock();
 	insertionSort_ip(a, n);
@@ -51,7 +51,7 @@ int main(){
 	cpu_time_used = ((double) (end - start)) / CLOCKS_PER_SEC;
     
   double t1 = cpu_time_used;  
-  printf("insertionSort fatto. Tempo: %lf msec.\n", t1);
+  printf("insertionSort fatto. Tempo: %lf sec.\n", t1);
   
   start = clock();
 	selectionSort_ip(v, n);
@@ -59,7 +59,7 @@ int main(){
 	cpu_time_used = ((double) (end - start)) / CLOCKS_PER_SEC;
   
   double t2 = cpu_time_used;
-  printf("selectionSort fatto. Tempo: %lf msec.\n", t2);
+  printf("selectionSort fatto. Tempo: %lf sec.\n", t2);
   
   start = clock();
 	mergeSort(b, 0, n-1);
@@ -67,7 +67,7 @@ int main(){
 	cpu_time_used = ((double) (end - start)) / CLOCKS_PER_SEC;
   
   double t3 = cpu_time_used;
-  printf("mergeSort fatto. Tempo: %lf msec.\n", t3);
+  printf("mergeSort fatto. Tempo: %lf sec.\n", t3);
     
 	//printf("\nSequenza ordinata: ");
 	//print_array(b,n);
